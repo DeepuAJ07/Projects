@@ -1,0 +1,161 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  color: white;
+  background-color: blue;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
+}
+
+.home,.shop,.services,.products,.offer,.homemade,.login{
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0,10px;
+  cursor: pointer;
+}
+
+
+.login{
+  border: 1px solid yellow;
+  border-radius: 5px ;
+}
+
+.mob-menu-icon{
+  display: none;
+}
+
+@media screen  and (max-width:768px){
+img{
+  display: flex;
+  position: absolute;
+  top: 15px;
+  left:35px;
+}
+.nav-links{
+  display: none;
+}
+.nav-mob-link{
+  position: absolute;
+  display: block;
+  list-style: none;
+  background-color: aqua;
+  left: 0;
+  top: 75px;
+  transition: all 0.5s ease-out;
+  width:100%
+}
+.home,.shop,.services,.products,.offer,.homemade,.login{
+  color: white;
+  text-align: center;
+  padding:32px;
+  width: 100px;
+  transition: all 0.5s ease-out;
+}
+
+.login{
+  border: none;
+}
+.mob-menu-icon{
+  display: inline;
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  background-color: blue;
+  outline: none;
+  top: 15px;
+  right: 25px;
+}
+}
+
+
+
+.carousel{
+display: flex;
+  justify-content: center;
+}
+
+.carousel .slide img{
+  max-height: 100%;
+  width: auto;
+}
+.image{
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+@media only screen and(max-width:1200px){
+  .carousel{
+    height: 90vh;
+  }
+
+}
+
+
+@media only screen and(max-width:900px){
+  .carousel{
+    height: 80vh;
+  }
+
+}
+
+
+@media only screen and(max-width:700px){
+  .carousel{
+    height: 70vh;
+  }
+
+}
+
+
+@media only screen and(max-width:650px){
+  .carousel{
+    height: 65vh;
+  }
+ 
+}
+
+@media only screen and(max-width:500px){
+  .carousel{
+    height: 50vh;
+  }
+ 
+}
+
+#details-page h1{
+ text-align: center;
+ margin: 0 auto;
+ font-size: 60px;
+ color: rgba(6, 155, 155, 0.705);
+}
+
+#details-page p{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  color: gray;
+}
+
+
+
+
+
+
+
+
+
+
